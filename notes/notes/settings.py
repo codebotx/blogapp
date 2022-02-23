@@ -64,6 +64,7 @@ CORS_ALLOWED_ORIGINS = [
 
     "http://localhost:3000",
     "http://localhost:5000",
+    "http://3.211.34.97:3000",
 
 ]
 
