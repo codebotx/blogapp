@@ -7,7 +7,7 @@
 - sudo apt-get python3-pip
 - sudo apt-get nodejs
 - sudo apt-get npm
-git clone "https://github.com/codebotx/react-frontend-blogapp"
+- git clone "https://github.com/codebotx/react-frontend-blogapp"
 - sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000
 - cd blogapp/notes
 - npm i
