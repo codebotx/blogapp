@@ -14,7 +14,9 @@
 - npm run build
 - npm install serve -g (if this doesn't work use supersu)
 - serve -s build 
+
 open another connection to the instance
+
 - cd blogapp/notes
 - pip install django
 - pip install django-cors-headers
