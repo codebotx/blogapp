@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
-import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -24,8 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-n6-xg_zb60geiyft#01t9=l%r0w4*(-r0j^lb-^1m9f$u_dd_$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+DEBUG = False
 ALLOWED_HOSTS = []
 
 
@@ -64,9 +62,10 @@ CORS_ALLOWED_ORIGINS = [
 
     "http://localhost:3000",
     "http://localhost:5000",
-    "http://3.211.34.97:3000",
-    "http://3.211.34.97:41985",
-    "http://localhost:41985"
+    "http://localhost:41985",
+    "https://54.147.82.164:3000",
+    "https://54.147.82.164:41985",
+    "https://54.147.82.164:5000",
 
 ]
 
@@ -75,7 +74,7 @@ ROOT_URLCONF = 'notes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'build')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
